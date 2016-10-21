@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0314B7ED1DBA02460046136E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0314B7EC1DBA02460046136E /* main.m */; };
 		0314B7F01DBA02460046136E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0314B7EF1DBA02460046136E /* AppDelegate.m */; };
-		0314B7F31DBA02460046136E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0314B7F21DBA02460046136E /* ViewController.m */; };
 		0314B7F61DBA02460046136E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0314B7F41DBA02460046136E /* Main.storyboard */; };
 		0314B7F81DBA02460046136E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0314B7F71DBA02460046136E /* Assets.xcassets */; };
 		0314B7FB1DBA02460046136E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0314B7F91DBA02460046136E /* LaunchScreen.storyboard */; };
@@ -39,8 +38,6 @@
 		0314B7EC1DBA02460046136E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0314B7EE1DBA02460046136E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0314B7EF1DBA02460046136E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0314B7F11DBA02460046136E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0314B7F21DBA02460046136E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0314B7F51DBA02460046136E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0314B7F71DBA02460046136E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0314B7FA1DBA02460046136E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -101,11 +98,9 @@
 		0314B7EA1DBA02460046136E /* HYMBA */ = {
 			isa = PBXGroup;
 			children = (
-				0314B81E1DBA07C50046136E /* Classes */,
+				037AFAB01DBA16E90028BCDC /* Classes */,
 				0314B7EE1DBA02460046136E /* AppDelegate.h */,
 				0314B7EF1DBA02460046136E /* AppDelegate.m */,
-				0314B7F11DBA02460046136E /* ViewController.h */,
-				0314B7F21DBA02460046136E /* ViewController.m */,
 				0314B7F41DBA02460046136E /* Main.storyboard */,
 				0314B7F71DBA02460046136E /* Assets.xcassets */,
 				0314B7F91DBA02460046136E /* LaunchScreen.storyboard */,
@@ -141,43 +136,107 @@
 			path = HYMBAUITests;
 			sourceTree = "<group>";
 		};
-		0314B81E1DBA07C50046136E /* Classes */ = {
+		037AFAB01DBA16E90028BCDC /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				0314B81F1DBA09800046136E /* Live */,
+				037AFAB81DBA17710028BCDC /* Main */,
+				037AFAB71DBA176A0028BCDC /* Home */,
+				037AFAB61DBA17580028BCDC /* Discovery */,
+				037AFAB51DBA173C0028BCDC /* Subscription */,
+				037AFAB41DBA17350028BCDC /* Live */,
+				037AFAB31DBA17270028BCDC /* Me */,
+				037AFAB21DBA171C0028BCDC /* Other */,
+				037AFAB11DBA17140028BCDC /* More */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
 		};
-		0314B81F1DBA09800046136E /* Live */ = {
+		037AFAB11DBA17140028BCDC /* More */ = {
 			isa = PBXGroup;
 			children = (
-				0314B8201DBA099C0046136E /* Controller */,
-				0314B8211DBA09B10046136E /* Model */,
-				0314B8221DBA09BE0046136E /* View */,
+			);
+			name = More;
+			sourceTree = "<group>";
+		};
+		037AFAB21DBA171C0028BCDC /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		037AFAB31DBA17270028BCDC /* Me */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Me;
+			sourceTree = "<group>";
+		};
+		037AFAB41DBA17350028BCDC /* Live */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			name = Live;
 			sourceTree = "<group>";
 		};
-		0314B8201DBA099C0046136E /* Controller */ = {
+		037AFAB51DBA173C0028BCDC /* Subscription */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Subscription;
+			sourceTree = "<group>";
+		};
+		037AFAB61DBA17580028BCDC /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Discovery;
+			sourceTree = "<group>";
+		};
+		037AFAB71DBA176A0028BCDC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		037AFAB81DBA17710028BCDC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				037AFAB91DBA178D0028BCDC /* Controller */,
+				037AFABB1DBA17A60028BCDC /* View */,
+				037AFABA1DBA179D0028BCDC /* Model */,
+				037AFABC1DBA17AD0028BCDC /* Tool */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		037AFAB91DBA178D0028BCDC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Controller;
 			sourceTree = "<group>";
 		};
-		0314B8211DBA09B10046136E /* Model */ = {
+		037AFABA1DBA179D0028BCDC /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = Model;
 			sourceTree = "<group>";
 		};
-		0314B8221DBA09BE0046136E /* View */ = {
+		037AFABB1DBA17A60028BCDC /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		037AFABC1DBA17AD0028BCDC /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Tool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,7 +375,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0314B7F31DBA02460046136E /* ViewController.m in Sources */,
 				0314B7F01DBA02460046136E /* AppDelegate.m in Sources */,
 				0314B7ED1DBA02460046136E /* main.m in Sources */,
 			);
@@ -554,6 +612,7 @@
 				0314B8171DBA02470046136E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0314B8181DBA02470046136E /* Build configuration list for PBXNativeTarget "HYMBATests" */ = {
 			isa = XCConfigurationList;
@@ -562,6 +621,7 @@
 				0314B81A1DBA02470046136E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0314B81B1DBA02470046136E /* Build configuration list for PBXNativeTarget "HYMBAUITests" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +630,7 @@
 				0314B81D1DBA02470046136E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
