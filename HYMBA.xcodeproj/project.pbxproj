@@ -14,6 +14,19 @@
 		0314B7FB1DBA02460046136E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0314B7F91DBA02460046136E /* LaunchScreen.storyboard */; };
 		0314B8061DBA02460046136E /* HYMBATests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0314B8051DBA02460046136E /* HYMBATests.m */; };
 		0314B8111DBA02470046136E /* HYMBAUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0314B8101DBA02470046136E /* HYMBAUITests.m */; };
+		03F46ED51DBA47760048BF01 /* SGTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F46ED41DBA47760048BF01 /* SGTabBarViewController.m */; };
+		03F46ED81DBA489F0048BF01 /* SGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F46ED71DBA489F0048BF01 /* SGNavigationController.m */; };
+		03F46EDC1DBA4C880048BF01 /* UIBarButtonItem+SG.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F46EDB1DBA4C880048BF01 /* UIBarButtonItem+SG.m */; };
+		03F46EDF1DBA4DF10048BF01 /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F46EDE1DBA4DF10048BF01 /* UIButton+Extension.m */; };
+		03F46EE61DBA59490048BF01 /* SGHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F46EE41DBA59490048BF01 /* SGHomeViewController.m */; };
+		03F46EE71DBA59490048BF01 /* SGHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03F46EE51DBA59490048BF01 /* SGHomeViewController.xib */; };
+		03F46EF81DBA5A0F0048BF01 /* SGMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F46EF61DBA5A0F0048BF01 /* SGMeViewController.m */; };
+		03F46EF91DBA5A0F0048BF01 /* SGMeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03F46EF71DBA5A0F0048BF01 /* SGMeViewController.xib */; };
+		03F46EFD1DBA5A3E0048BF01 /* SGDiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F46EFB1DBA5A3E0048BF01 /* SGDiscoveryViewController.m */; };
+		03F46EFE1DBA5A3E0048BF01 /* SGDiscoveryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03F46EFC1DBA5A3E0048BF01 /* SGDiscoveryViewController.xib */; };
+		03F46F021DBA5A570048BF01 /* SGSubscriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F46F001DBA5A570048BF01 /* SGSubscriptionViewController.m */; };
+		03F46F031DBA5A570048BF01 /* SGSubscriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03F46F011DBA5A570048BF01 /* SGSubscriptionViewController.xib */; };
+		03F46F061DBA5C230048BF01 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 03F46F051DBA5C230048BF01 /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +61,29 @@
 		0314B80C1DBA02470046136E /* HYMBAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HYMBAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0314B8101DBA02470046136E /* HYMBAUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYMBAUITests.m; sourceTree = "<group>"; };
 		0314B8121DBA02470046136E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03F46ED31DBA47760048BF01 /* SGTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGTabBarViewController.h; sourceTree = "<group>"; };
+		03F46ED41DBA47760048BF01 /* SGTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGTabBarViewController.m; sourceTree = "<group>"; };
+		03F46ED61DBA489F0048BF01 /* SGNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGNavigationController.h; sourceTree = "<group>"; };
+		03F46ED71DBA489F0048BF01 /* SGNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGNavigationController.m; sourceTree = "<group>"; };
+		03F46EDA1DBA4C880048BF01 /* UIBarButtonItem+SG.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+SG.h"; sourceTree = "<group>"; };
+		03F46EDB1DBA4C880048BF01 /* UIBarButtonItem+SG.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+SG.m"; sourceTree = "<group>"; };
+		03F46EDD1DBA4DF10048BF01 /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
+		03F46EDE1DBA4DF10048BF01 /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
+		03F46EE11DBA50670048BF01 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		03F46EE31DBA59490048BF01 /* SGHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGHomeViewController.h; sourceTree = "<group>"; };
+		03F46EE41DBA59490048BF01 /* SGHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGHomeViewController.m; sourceTree = "<group>"; };
+		03F46EE51DBA59490048BF01 /* SGHomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SGHomeViewController.xib; sourceTree = "<group>"; };
+		03F46EF51DBA5A0F0048BF01 /* SGMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGMeViewController.h; sourceTree = "<group>"; };
+		03F46EF61DBA5A0F0048BF01 /* SGMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGMeViewController.m; sourceTree = "<group>"; };
+		03F46EF71DBA5A0F0048BF01 /* SGMeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SGMeViewController.xib; sourceTree = "<group>"; };
+		03F46EFA1DBA5A3E0048BF01 /* SGDiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGDiscoveryViewController.h; sourceTree = "<group>"; };
+		03F46EFB1DBA5A3E0048BF01 /* SGDiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGDiscoveryViewController.m; sourceTree = "<group>"; };
+		03F46EFC1DBA5A3E0048BF01 /* SGDiscoveryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SGDiscoveryViewController.xib; sourceTree = "<group>"; };
+		03F46EFF1DBA5A570048BF01 /* SGSubscriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGSubscriptionViewController.h; sourceTree = "<group>"; };
+		03F46F001DBA5A570048BF01 /* SGSubscriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGSubscriptionViewController.m; sourceTree = "<group>"; };
+		03F46F011DBA5A570048BF01 /* SGSubscriptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SGSubscriptionViewController.xib; sourceTree = "<group>"; };
+		03F46F041DBA5C230048BF01 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		03F46F051DBA5C230048BF01 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				0314B7EC1DBA02460046136E /* main.m */,
+				03F46EE11DBA50670048BF01 /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -161,6 +198,7 @@
 		037AFAB21DBA171C0028BCDC /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				03F46ED91DBA4C260048BF01 /* Category */,
 			);
 			name = Other;
 			sourceTree = "<group>";
@@ -168,6 +206,7 @@
 		037AFAB31DBA17270028BCDC /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				03F46EF41DBA59ED0048BF01 /* Controller */,
 			);
 			name = Me;
 			sourceTree = "<group>";
@@ -182,6 +221,7 @@
 		037AFAB51DBA173C0028BCDC /* Subscription */ = {
 			isa = PBXGroup;
 			children = (
+				03F46EEE1DBA59C40048BF01 /* Controller */,
 			);
 			name = Subscription;
 			sourceTree = "<group>";
@@ -189,6 +229,7 @@
 		037AFAB61DBA17580028BCDC /* Discovery */ = {
 			isa = PBXGroup;
 			children = (
+				03F46EE81DBA598D0048BF01 /* Controller */,
 			);
 			name = Discovery;
 			sourceTree = "<group>";
@@ -196,6 +237,7 @@
 		037AFAB71DBA176A0028BCDC /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				03F46EE21DBA59210048BF01 /* Controller */,
 			);
 			name = Home;
 			sourceTree = "<group>";
@@ -214,6 +256,8 @@
 		037AFAB91DBA178D0028BCDC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				03F46ED11DBA46B10048BF01 /* Nav */,
+				03F46ED21DBA46CE0048BF01 /* Tab */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -237,6 +281,77 @@
 			children = (
 			);
 			name = Tool;
+			sourceTree = "<group>";
+		};
+		03F46ED11DBA46B10048BF01 /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				03F46ED61DBA489F0048BF01 /* SGNavigationController.h */,
+				03F46ED71DBA489F0048BF01 /* SGNavigationController.m */,
+			);
+			name = Nav;
+			sourceTree = "<group>";
+		};
+		03F46ED21DBA46CE0048BF01 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				03F46ED31DBA47760048BF01 /* SGTabBarViewController.h */,
+				03F46ED41DBA47760048BF01 /* SGTabBarViewController.m */,
+			);
+			name = Tab;
+			sourceTree = "<group>";
+		};
+		03F46ED91DBA4C260048BF01 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				03F46F041DBA5C230048BF01 /* UIView+Extension.h */,
+				03F46F051DBA5C230048BF01 /* UIView+Extension.m */,
+				03F46EDD1DBA4DF10048BF01 /* UIButton+Extension.h */,
+				03F46EDE1DBA4DF10048BF01 /* UIButton+Extension.m */,
+				03F46EDA1DBA4C880048BF01 /* UIBarButtonItem+SG.h */,
+				03F46EDB1DBA4C880048BF01 /* UIBarButtonItem+SG.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		03F46EE21DBA59210048BF01 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				03F46EE31DBA59490048BF01 /* SGHomeViewController.h */,
+				03F46EE41DBA59490048BF01 /* SGHomeViewController.m */,
+				03F46EE51DBA59490048BF01 /* SGHomeViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		03F46EE81DBA598D0048BF01 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				03F46EFA1DBA5A3E0048BF01 /* SGDiscoveryViewController.h */,
+				03F46EFB1DBA5A3E0048BF01 /* SGDiscoveryViewController.m */,
+				03F46EFC1DBA5A3E0048BF01 /* SGDiscoveryViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		03F46EEE1DBA59C40048BF01 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				03F46EFF1DBA5A570048BF01 /* SGSubscriptionViewController.h */,
+				03F46F001DBA5A570048BF01 /* SGSubscriptionViewController.m */,
+				03F46F011DBA5A570048BF01 /* SGSubscriptionViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		03F46EF41DBA59ED0048BF01 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				03F46EF51DBA5A0F0048BF01 /* SGMeViewController.h */,
+				03F46EF61DBA5A0F0048BF01 /* SGMeViewController.m */,
+				03F46EF71DBA5A0F0048BF01 /* SGMeViewController.xib */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,9 +463,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03F46EFE1DBA5A3E0048BF01 /* SGDiscoveryViewController.xib in Resources */,
 				0314B7FB1DBA02460046136E /* LaunchScreen.storyboard in Resources */,
 				0314B7F81DBA02460046136E /* Assets.xcassets in Resources */,
 				0314B7F61DBA02460046136E /* Main.storyboard in Resources */,
+				03F46EE71DBA59490048BF01 /* SGHomeViewController.xib in Resources */,
+				03F46EF91DBA5A0F0048BF01 /* SGMeViewController.xib in Resources */,
+				03F46F031DBA5A570048BF01 /* SGSubscriptionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,7 +495,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				0314B7F01DBA02460046136E /* AppDelegate.m in Sources */,
+				03F46EDF1DBA4DF10048BF01 /* UIButton+Extension.m in Sources */,
+				03F46F061DBA5C230048BF01 /* UIView+Extension.m in Sources */,
+				03F46ED81DBA489F0048BF01 /* SGNavigationController.m in Sources */,
+				03F46EF81DBA5A0F0048BF01 /* SGMeViewController.m in Sources */,
+				03F46EDC1DBA4C880048BF01 /* UIBarButtonItem+SG.m in Sources */,
+				03F46EFD1DBA5A3E0048BF01 /* SGDiscoveryViewController.m in Sources */,
 				0314B7ED1DBA02460046136E /* main.m in Sources */,
+				03F46ED51DBA47760048BF01 /* SGTabBarViewController.m in Sources */,
+				03F46EE61DBA59490048BF01 /* SGHomeViewController.m in Sources */,
+				03F46F021DBA5A570048BF01 /* SGSubscriptionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +652,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BSEXTQ84HR;
+				GCC_PREFIX_HEADER = HYMBA/PrefixHeader.pch;
 				INFOPLIST_FILE = HYMBA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hymba.HYMBA;
@@ -536,6 +665,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BSEXTQ84HR;
+				GCC_PREFIX_HEADER = HYMBA/PrefixHeader.pch;
 				INFOPLIST_FILE = HYMBA/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hymba.HYMBA;
