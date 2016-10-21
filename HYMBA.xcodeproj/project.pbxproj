@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0314B7ED1DBA02460046136E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0314B7EC1DBA02460046136E /* main.m */; };
+		0314B7F01DBA02460046136E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0314B7EF1DBA02460046136E /* AppDelegate.m */; };
+		0314B7F31DBA02460046136E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0314B7F21DBA02460046136E /* ViewController.m */; };
+		0314B7F61DBA02460046136E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0314B7F41DBA02460046136E /* Main.storyboard */; };
+		0314B7F81DBA02460046136E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0314B7F71DBA02460046136E /* Assets.xcassets */; };
+		0314B7FB1DBA02460046136E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0314B7F91DBA02460046136E /* LaunchScreen.storyboard */; };
+		0314B8061DBA02460046136E /* HYMBATests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0314B8051DBA02460046136E /* HYMBATests.m */; };
+		0314B8111DBA02470046136E /* HYMBAUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0314B8101DBA02470046136E /* HYMBAUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0314B8021DBA02460046136E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0314B7E01DBA02460046136E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0314B7E71DBA02460046136E;
+			remoteInfo = HYMBA;
+		};
+		0314B80D1DBA02470046136E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0314B7E01DBA02460046136E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0314B7E71DBA02460046136E;
+			remoteInfo = HYMBA;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0314B7E81DBA02460046136E /* HYMBA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HYMBA.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0314B7EC1DBA02460046136E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0314B7EE1DBA02460046136E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0314B7EF1DBA02460046136E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0314B7F11DBA02460046136E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0314B7F21DBA02460046136E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0314B7F51DBA02460046136E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0314B7F71DBA02460046136E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0314B7FA1DBA02460046136E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0314B7FC1DBA02460046136E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0314B8011DBA02460046136E /* HYMBATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HYMBATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0314B8051DBA02460046136E /* HYMBATests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYMBATests.m; sourceTree = "<group>"; };
+		0314B8071DBA02460046136E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0314B80C1DBA02470046136E /* HYMBAUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HYMBAUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0314B8101DBA02470046136E /* HYMBAUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HYMBAUITests.m; sourceTree = "<group>"; };
+		0314B8121DBA02470046136E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0314B7E51DBA02460046136E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0314B7FE1DBA02460046136E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0314B8091DBA02470046136E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0314B7DF1DBA02460046136E = {
+			isa = PBXGroup;
+			children = (
+				0314B7EA1DBA02460046136E /* HYMBA */,
+				0314B8041DBA02460046136E /* HYMBATests */,
+				0314B80F1DBA02470046136E /* HYMBAUITests */,
+				0314B7E91DBA02460046136E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0314B7E91DBA02460046136E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0314B7E81DBA02460046136E /* HYMBA.app */,
+				0314B8011DBA02460046136E /* HYMBATests.xctest */,
+				0314B80C1DBA02470046136E /* HYMBAUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0314B7EA1DBA02460046136E /* HYMBA */ = {
+			isa = PBXGroup;
+			children = (
+				0314B7EE1DBA02460046136E /* AppDelegate.h */,
+				0314B7EF1DBA02460046136E /* AppDelegate.m */,
+				0314B7F11DBA02460046136E /* ViewController.h */,
+				0314B7F21DBA02460046136E /* ViewController.m */,
+				0314B7F41DBA02460046136E /* Main.storyboard */,
+				0314B7F71DBA02460046136E /* Assets.xcassets */,
+				0314B7F91DBA02460046136E /* LaunchScreen.storyboard */,
+				0314B7FC1DBA02460046136E /* Info.plist */,
+				0314B7EB1DBA02460046136E /* Supporting Files */,
+			);
+			path = HYMBA;
+			sourceTree = "<group>";
+		};
+		0314B7EB1DBA02460046136E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0314B7EC1DBA02460046136E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0314B8041DBA02460046136E /* HYMBATests */ = {
+			isa = PBXGroup;
+			children = (
+				0314B8051DBA02460046136E /* HYMBATests.m */,
+				0314B8071DBA02460046136E /* Info.plist */,
+			);
+			path = HYMBATests;
+			sourceTree = "<group>";
+		};
+		0314B80F1DBA02470046136E /* HYMBAUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0314B8101DBA02470046136E /* HYMBAUITests.m */,
+				0314B8121DBA02470046136E /* Info.plist */,
+			);
+			path = HYMBAUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0314B7E71DBA02460046136E /* HYMBA */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0314B8151DBA02470046136E /* Build configuration list for PBXNativeTarget "HYMBA" */;
+			buildPhases = (
+				0314B7E41DBA02460046136E /* Sources */,
+				0314B7E51DBA02460046136E /* Frameworks */,
+				0314B7E61DBA02460046136E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HYMBA;
+			productName = HYMBA;
+			productReference = 0314B7E81DBA02460046136E /* HYMBA.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0314B8001DBA02460046136E /* HYMBATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0314B8181DBA02470046136E /* Build configuration list for PBXNativeTarget "HYMBATests" */;
+			buildPhases = (
+				0314B7FD1DBA02460046136E /* Sources */,
+				0314B7FE1DBA02460046136E /* Frameworks */,
+				0314B7FF1DBA02460046136E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0314B8031DBA02460046136E /* PBXTargetDependency */,
+			);
+			name = HYMBATests;
+			productName = HYMBATests;
+			productReference = 0314B8011DBA02460046136E /* HYMBATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0314B80B1DBA02470046136E /* HYMBAUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0314B81B1DBA02470046136E /* Build configuration list for PBXNativeTarget "HYMBAUITests" */;
+			buildPhases = (
+				0314B8081DBA02470046136E /* Sources */,
+				0314B8091DBA02470046136E /* Frameworks */,
+				0314B80A1DBA02470046136E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0314B80E1DBA02470046136E /* PBXTargetDependency */,
+			);
+			name = HYMBAUITests;
+			productName = HYMBAUITests;
+			productReference = 0314B80C1DBA02470046136E /* HYMBAUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0314B7E01DBA02460046136E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Tsnow;
+				TargetAttributes = {
+					0314B7E71DBA02460046136E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BSEXTQ84HR;
+						ProvisioningStyle = Automatic;
+					};
+					0314B8001DBA02460046136E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BSEXTQ84HR;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0314B7E71DBA02460046136E;
+					};
+					0314B80B1DBA02470046136E = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = BSEXTQ84HR;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0314B7E71DBA02460046136E;
+					};
+				};
+			};
+			buildConfigurationList = 0314B7E31DBA02460046136E /* Build configuration list for PBXProject "HYMBA" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0314B7DF1DBA02460046136E;
+			productRefGroup = 0314B7E91DBA02460046136E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0314B7E71DBA02460046136E /* HYMBA */,
+				0314B8001DBA02460046136E /* HYMBATests */,
+				0314B80B1DBA02470046136E /* HYMBAUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0314B7E61DBA02460046136E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0314B7FB1DBA02460046136E /* LaunchScreen.storyboard in Resources */,
+				0314B7F81DBA02460046136E /* Assets.xcassets in Resources */,
+				0314B7F61DBA02460046136E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0314B7FF1DBA02460046136E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0314B80A1DBA02470046136E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0314B7E41DBA02460046136E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0314B7F31DBA02460046136E /* ViewController.m in Sources */,
+				0314B7F01DBA02460046136E /* AppDelegate.m in Sources */,
+				0314B7ED1DBA02460046136E /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0314B7FD1DBA02460046136E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0314B8061DBA02460046136E /* HYMBATests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0314B8081DBA02470046136E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0314B8111DBA02470046136E /* HYMBAUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0314B8031DBA02460046136E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0314B7E71DBA02460046136E /* HYMBA */;
+			targetProxy = 0314B8021DBA02460046136E /* PBXContainerItemProxy */;
+		};
+		0314B80E1DBA02470046136E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0314B7E71DBA02460046136E /* HYMBA */;
+			targetProxy = 0314B80D1DBA02470046136E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0314B7F41DBA02460046136E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0314B7F51DBA02460046136E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0314B7F91DBA02460046136E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0314B7FA1DBA02460046136E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0314B8131DBA02470046136E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0314B8141DBA02470046136E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0314B8161DBA02470046136E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BSEXTQ84HR;
+				INFOPLIST_FILE = HYMBA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hymba.HYMBA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0314B8171DBA02470046136E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = BSEXTQ84HR;
+				INFOPLIST_FILE = HYMBA/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hymba.HYMBA;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0314B8191DBA02470046136E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BSEXTQ84HR;
+				INFOPLIST_FILE = HYMBATests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hymba.HYMBATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HYMBA.app/HYMBA";
+			};
+			name = Debug;
+		};
+		0314B81A1DBA02470046136E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = BSEXTQ84HR;
+				INFOPLIST_FILE = HYMBATests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hymba.HYMBATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HYMBA.app/HYMBA";
+			};
+			name = Release;
+		};
+		0314B81C1DBA02470046136E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = BSEXTQ84HR;
+				INFOPLIST_FILE = HYMBAUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hymba.HYMBAUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HYMBA;
+			};
+			name = Debug;
+		};
+		0314B81D1DBA02470046136E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = BSEXTQ84HR;
+				INFOPLIST_FILE = HYMBAUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hymba.HYMBAUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HYMBA;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0314B7E31DBA02460046136E /* Build configuration list for PBXProject "HYMBA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0314B8131DBA02470046136E /* Debug */,
+				0314B8141DBA02470046136E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0314B8151DBA02470046136E /* Build configuration list for PBXNativeTarget "HYMBA" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0314B8161DBA02470046136E /* Debug */,
+				0314B8171DBA02470046136E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0314B8181DBA02470046136E /* Build configuration list for PBXNativeTarget "HYMBATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0314B8191DBA02470046136E /* Debug */,
+				0314B81A1DBA02470046136E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0314B81B1DBA02470046136E /* Build configuration list for PBXNativeTarget "HYMBAUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0314B81C1DBA02470046136E /* Debug */,
+				0314B81D1DBA02470046136E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0314B7E01DBA02460046136E /* Project object */;
+}
