@@ -7,8 +7,10 @@
 //
 
 #import "SGSubscriptionViewController.h"
+#import "SGPlayLiveViewController.h"
 
 @interface SGSubscriptionViewController ()
+- (IBAction)zhibo:(UIButton *)sender;
 
 @end
 
@@ -34,4 +36,8 @@
 }
 */
 
+- (IBAction)zhibo:(UIButton *)sender {
+    
+    [self presentViewController:[[SGPlayLiveViewController alloc] init] animated:YES completion:nil];
+}
 @end
