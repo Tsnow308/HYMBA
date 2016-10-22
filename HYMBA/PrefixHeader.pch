@@ -18,13 +18,16 @@
 #define XLScreenH [UIScreen mainScreen].bounds.size.height
 
 
-
+#import <IJKMediaFramework/IJKMediaFramework.h> //请看 README.md
 
 #import "UIButton+Extension.h"
 #import "UIView+Extension.h"
 #import "UIDevice+Extension.h"
 #import "MBProgressHUD+MJ.h"
-
+#import "MJExtension.h"
+#import "SDWebImageDownloader.h"
+#import "UIImage+Extension.h"
+#import "Masonry.h"
 
 #endif
 

@@ -8,10 +8,14 @@
 
 #import "SGSubscriptionViewController.h"
 #import "SGPlayLiveViewController.h"
+#import "SGHotModel.h"
+#import "SGWatchLiveViewController.h"
+
 
 @interface SGSubscriptionViewController ()
 - (IBAction)zhibo:(UIButton *)sender;
 
+- (IBAction)guankan:(UIButton *)sender;
 @end
 
 @implementation SGSubscriptionViewController
@@ -39,5 +43,16 @@
 - (IBAction)zhibo:(UIButton *)sender {
     
     [self presentViewController:[[SGPlayLiveViewController alloc] init] animated:YES completion:nil];
+}
+
+- (IBAction)guankan:(UIButton *)sender {
+    
+    SGHotModel *hotModel = [[SGHotModel alloc] init];
+    hotModel.flv = @"rtmp://192.168.2.60:1935/rtmplive/room";
+    
+    SGWatchLiveViewController *watchLive = [[SGWatchLiveViewController alloc]init];
+//    watchLive.hotModel = hotModel;
+    
+    [self presentViewController:watchLive animated:YES completion:nil];
 }
 @end
