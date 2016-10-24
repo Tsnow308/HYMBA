@@ -85,7 +85,7 @@
         [[NSNotificationCenter defaultCenter] removeObserver:self];
     }
     
-    [[SDWebImageDownloader sharedDownloader] downloadImageWithURL:[NSURL URLWithString:@"http://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=%E5%AE%A0%E7%89%A9&step_word=&hs=0&pn=7&spn=0&di=42623657340&pi=0&rn=1&tn=baiduimagedetail&is=0%2C0&istype=0&ie=utf-8&oe=utf-8&in=&cl=2&lm=-1&st=undefined&cs=2477016780%2C243579597&os=4289573693%2C210046885&simid=3372627718%2C124984323&adpicid=0&ln=1984&fr=&fmq=1477140568914_R&fm=&ic=undefined&s=undefined&se=&sme=&tab=0&width=&height=&face=undefined&ist=&jit=&cg=&bdtype=0&oriquery=&objurl=http%3A%2F%2Fpic34.nipic.com%2F20131028%2F2455348_171218804000_2.jpg&fromurl=ippr_z2C%24qAzdH3FAzdH3Fooo_z%26e3Bgtrtv_z%26e3Bv54AzdH3Frf1AzdH3Fzi7wgptAzdH3F898cmlc_z%26e3Bip4s&gsm=0&rpstart=0&rpnum=0"] options:SDWebImageDownloaderUseNSURLCache progress:nil completed:^(UIImage *image, NSData *data, NSError *error, BOOL finished) {
+    [[SDWebImageDownloader sharedDownloader] downloadImageWithURL:[NSURL URLWithString:nil] options:SDWebImageDownloaderUseNSURLCache progress:nil completed:^(UIImage *image, NSData *data, NSError *error, BOOL finished) {
         dispatch_async(dispatch_get_main_queue(), ^{
             __weak typeof(self) weakSelf = self;
             
@@ -104,7 +104,7 @@
     // -vol——设置音量大小，256为标准音量。（要设置成两倍音量时则输入512，依此类推
 //    [options setPlayerOptionIntValue:512 forKey:@"vol"];
     // 3.2 创建播放控制器
-    IJKFFMoviePlayerController *moviePlayer = [[IJKFFMoviePlayerController alloc] initWithContentURLString:@"rtmp://192.168.2.60:1935/rtmplive/room" withOptions: options];
+    IJKFFMoviePlayerController *moviePlayer = [[IJKFFMoviePlayerController alloc] initWithContentURLString:RoomUrl withOptions: options];
     self.moviePlayer = moviePlayer;
     self.moviePlayer.view.frame = self.view.bounds;
     // 填充fill

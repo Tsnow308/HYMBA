@@ -148,7 +148,7 @@
     if (self.livingBtn.selected) {//开始直播
         LFLiveStreamInfo *stream = [LFLiveStreamInfo new];
         //直播室地址
-        stream.url = @"rtmp://192.168.2.60:1935/rtmplive/room";
+        stream.url = RoomUrl;
         self.rtmpUrl = stream.url;
         [self.session startLive:stream];
     }else{//结束直播
