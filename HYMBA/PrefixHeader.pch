@@ -18,10 +18,10 @@
 #define XLScreenH [UIScreen mainScreen].bounds.size.height
 
 //家里测试ip
-#define RoomUrl @"rtmp://192.168.2.60:1935/rtmplive/room"
+//#define RoomUrl @"rtmp://192.168.2.60:1935/rtmplive/room"
 
 //哈商测试ip
-//#define RoomUrl @"rtmp://192.168.11.33:1935/rtmplive/room"
+#define RoomUrl @"rtmp://192.168.11.36:1935/rtmplive/room"
 
 #import <IJKMediaFramework/IJKMediaFramework.h> //请看 README.md
 

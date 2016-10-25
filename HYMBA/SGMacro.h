@@ -1,6 +1,6 @@
 //
 //  SGMacro.h
-//  哮友会
+//  哈中少商
 //
 //  Created by xue on 15/12/9.
 //  Copyright © 2015年 xue. All rights reserved.

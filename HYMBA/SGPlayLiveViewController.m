@@ -9,6 +9,7 @@
 #import "SGPlayLiveViewController.h"
 #import "LFLiveKit.h"
 
+
 @interface SGPlayLiveViewController ()<LFLiveSessionDelegate>
 @property (weak, nonatomic) IBOutlet UIButton *livingBtn;
 @property (weak, nonatomic) IBOutlet UIButton *switchBtn;
@@ -39,7 +40,7 @@
 {
     if (_session == nil) {
         
-        _session = [[LFLiveSession alloc]initWithAudioConfiguration:[LFLiveAudioConfiguration defaultConfiguration] videoConfiguration:[LFLiveVideoConfiguration defaultConfigurationForQuality:LFLiveVideoQuality_Medium2] liveType:LFLiveRTMP];
+        _session = [[LFLiveSession alloc]initWithAudioConfiguration:[LFLiveAudioConfiguration defaultConfiguration] videoConfiguration:[LFLiveVideoConfiguration defaultConfigurationForQuality:LFLiveVideoQuality_Default] liveType:LFLiveRTMP];
     }
     
     // 设置代理
@@ -87,7 +88,8 @@
     //判断是否是模拟器
     if ([[UIDevice deviceVersion] isEqualToString:@"iPhone Simulator"]) {
         
-        [MBProgressHUD showMessage:@"请用真机进行测试, 此模块不支持模拟器测试"];
+//        [MBProgressHUD showMessage:@"请用真机进行测试, 此模块不支持模拟器测试"];
+          [MBProgressHUD showError:@"请用真机进行测试, 此模块不支持模拟器测试"];
         return NO;
     }
     

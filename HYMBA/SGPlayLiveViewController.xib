@@ -19,7 +19,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bX6-0U-Mvw">
-                    <frame key="frameInset" minX="130" minY="412" width="164" height="30"/>
+                    <frame key="frameInset" minX="130" minY="385" width="164" height="57"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="0.92104235829170733" green="0.46620204415107036" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal" title="开始直播"/>
@@ -28,10 +28,15 @@
                     </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uod-8n-3Eu">
-                    <frame key="frameInset" minX="236" minY="7" width="46" height="30"/>
+                    <frame key="frameInset" minX="216" minY="10" width="78" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="0.57991083127205401" green="1" blue="0.51193585114767015" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    <state key="normal" title="switchBtn"/>
+                    <color key="backgroundColor" red="0.66819329810000005" green="1" blue="0.61778444219999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="切换摄像头">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
                     <connections>
                         <action selector="switchBtn:" destination="-1" eventType="touchUpInside" id="CeV-Hw-Jzn"/>
                     </connections>

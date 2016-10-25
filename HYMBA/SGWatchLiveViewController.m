@@ -97,18 +97,18 @@
     }];
 
     IJKFFOptions *options = [IJKFFOptions optionsByDefault];
-//    [options setPlayerOptionIntValue:1  forKey:@"videotoolbox"];
+    [options setPlayerOptionIntValue:1  forKey:@"videotoolbox"];
     
     // 帧速率(fps) （可以改，确认非标准桢率会导致音画不同步，所以只能设定为15或者29.97）
-//    [options setPlayerOptionIntValue:29.97 forKey:@"r"];
+    [options setPlayerOptionIntValue:29.97 forKey:@"r"];
     // -vol——设置音量大小，256为标准音量。（要设置成两倍音量时则输入512，依此类推
-//    [options setPlayerOptionIntValue:512 forKey:@"vol"];
+    [options setPlayerOptionIntValue:512 forKey:@"vol"];
     // 3.2 创建播放控制器
     IJKFFMoviePlayerController *moviePlayer = [[IJKFFMoviePlayerController alloc] initWithContentURLString:RoomUrl withOptions: options];
     self.moviePlayer = moviePlayer;
     self.moviePlayer.view.frame = self.view.bounds;
     // 填充fill
-//    moviePlayer.scalingMode = IJKMPMovieScalingModeAspectFill;
+    moviePlayer.scalingMode = IJKMPMovieScalingModeAspectFill;
     // 设置自动播放(必须设置为NO, 防止自动播放, 才能更好的控制直播的状态)
     // 4.2 设置适配横竖屏(设置四边固定,长宽灵活)
     self.moviePlayer.view.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
