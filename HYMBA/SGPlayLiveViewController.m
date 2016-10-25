@@ -153,10 +153,13 @@
         stream.url = RoomUrl;
         self.rtmpUrl = stream.url;
         [self.session startLive:stream];
+        self.livingBtn.title = @"关闭直播";
+        self.livingBtn.backgroundColor = [UIColor greenColor];
+        
     }else{//结束直播
         [self.session stopLive];
-        
-    
+        self.livingBtn.title = @"开始直播";
+        self.livingBtn.backgroundColor = [UIColor redColor];
     }
 }
 
