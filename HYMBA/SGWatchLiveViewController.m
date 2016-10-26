@@ -21,6 +21,7 @@
 /** 计时器 */
 @property (nonatomic, strong) NSTimer *timer;
 
+- (IBAction)closeVideo:(UIButton *)sender;
 @end
 
 @implementation SGWatchLiveViewController
@@ -178,4 +179,8 @@
 }
 */
 
+- (IBAction)closeVideo:(UIButton *)sender {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end

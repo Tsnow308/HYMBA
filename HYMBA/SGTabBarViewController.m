@@ -31,8 +31,8 @@
 {
    //首页
     [self addChildViewController:[[SGHomeViewController alloc]init] notmalimageNamed:@"toolbar_home" selectedImage:@"toolbar_home" title:@"首页"];
-   //发现
-    [self addChildViewController:[[SGDiscoveryViewController alloc]init] notmalimageNamed:@"toolbar_home" selectedImage:@"toolbar_home" title:@"发现"];
+   //学习
+    [self addChildViewController:[[SGDiscoveryViewController alloc]init] notmalimageNamed:@"toolbar_home" selectedImage:@"toolbar_home" title:@"学习"];
    //订阅
     [self addChildViewController:[[SGSubscriptionViewController alloc]init] notmalimageNamed:@"toolbar_home" selectedImage:@"toolbar_home" title:@"订阅"];
     //我的
