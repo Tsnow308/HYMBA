@@ -1,2 +1,6 @@
-platform :ios,'10.0'
-pod 'MBProgressHUD','~>0.8'
+target ‘HYMBA’ do
+pod 'Masonry'
+pod 'SDWebImage'
+pod 'FDFullscreenPopGesture'
+pod 'ZFDownload'
+end

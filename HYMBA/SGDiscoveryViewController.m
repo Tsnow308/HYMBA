@@ -7,8 +7,14 @@
 //
 
 #import "SGDiscoveryViewController.h"
+#import "SGMoviePlayVC.h"
+#import <SDWebImageManager.h>
+
+
 
 @interface SGDiscoveryViewController ()
+- (IBAction)movieAction:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIImageView *testImage;
 
 @end
 
@@ -16,6 +22,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+   
+    
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -34,4 +43,13 @@
 }
 */
 
+- (IBAction)movieAction:(UIButton *)sender {
+    
+    SGMoviePlayVC *movieVC = [[SGMoviePlayVC alloc]init];
+    NSURL *URL = [NSURL URLWithString:@"http://baobab.wdjcdn.com/14564977406580.mp4"];
+    movieVC.videoURL = URL;
+    
+    [self.navigationController pushViewController:movieVC animated:YES];
+    
+}
 @end
