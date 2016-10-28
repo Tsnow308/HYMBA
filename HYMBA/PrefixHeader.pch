@@ -12,7 +12,10 @@
 #define PrefixHeader_pch
 
 #define XLColor(r, g, b) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:1]
-#define XLBasicColor XLColor(214, 41, 117)
+#define XLBasicColor XLColor(157, 157, 157)
+//tabBar颜色
+#define XLNormalColor XLColor(157, 157, 157)
+#define XLSelectedColor XLColor(253, 185, 72)
 
 #define XLScreenW [UIScreen mainScreen].bounds.size.width
 #define XLScreenH [UIScreen mainScreen].bounds.size.height

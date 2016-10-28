@@ -15,6 +15,7 @@
 @interface SGDiscoveryViewController ()
 - (IBAction)movieAction:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIImageView *testImage;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedAction;
 
 @end
 

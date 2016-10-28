@@ -29,14 +29,14 @@
 
 - (void)setupBasic
 {
-   //首页
-    [self addChildViewController:[[SGHomeViewController alloc]init] notmalimageNamed:@"toolbar_home" selectedImage:@"toolbar_home" title:@"首页"];
-   //学习
-    [self addChildViewController:[[SGDiscoveryViewController alloc]init] notmalimageNamed:@"toolbar_home" selectedImage:@"toolbar_home" title:@"学习"];
-   //订阅
-    [self addChildViewController:[[SGSubscriptionViewController alloc]init] notmalimageNamed:@"toolbar_home" selectedImage:@"toolbar_home" title:@"订阅"];
+    //首页
+    [self addChildViewController:[[SGHomeViewController alloc]init] notmalimageNamed:@"toolbar_home" selectedImage:@"toolbar_home_sel" title:@"首页"];
+    //学习
+    [self addChildViewController:[[SGDiscoveryViewController alloc]init] notmalimageNamed:@"toolbar_study" selectedImage:@"toolbar_study_sel" title:@"学习"];
+    //订阅
+    [self addChildViewController:[[SGSubscriptionViewController alloc]init] notmalimageNamed:@"toolbar_discovery" selectedImage:@"toolbar_discovery_sel" title:@"发现"];
     //我的
-    [self addChildViewController:[[SGMeViewController alloc]init] notmalimageNamed:@"toolbar_home" selectedImage:@"toolbar_home" title:@"我的"];
+    [self addChildViewController:[[SGMeViewController alloc]init] notmalimageNamed:@"toolbar_me" selectedImage:@"toolbar_me_sel" title:@"我的"];
 }
 
 - (void)addChildViewController:(UIViewController *)childController notmalimageNamed:(NSString *)imageName
@@ -44,9 +44,10 @@
 {
     SGNavigationController *nav = [[SGNavigationController alloc] initWithRootViewController:childController];
     childController.tabBarItem.image = [UIImage imageNamed:imageName];
-    childController.tabBarItem.image = [UIImage imageNamed:selectedImageName];
+    childController.tabBarItem.selectedImage = [UIImage imageNamed:selectedImageName];
     childController.title = title;
-    [childController.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName :XLBasicColor} forState:UIControlStateNormal];
+    [childController.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName :XLNormalColor} forState:UIControlStateNormal];
+    [childController.tabBarItem setTitleTextAttributes:@{NSForegroundColorAttributeName :XLSelectedColor} forState:UIControlStateSelected];
 
     [self addChildViewController:nav];
 }
