@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0314B7E71DBA02460046136E"
+               BlueprintIdentifier = "43175E381DC339A80078915F"
                BuildableName = "HYMBA.app"
                BlueprintName = "HYMBA"
                ReferencedContainer = "container:HYMBA.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0314B8001DBA02460046136E"
+               BlueprintIdentifier = "43175E511DC339A90078915F"
                BuildableName = "HYMBATests.xctest"
                BlueprintName = "HYMBATests"
                ReferencedContainer = "container:HYMBA.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0314B80B1DBA02470046136E"
+               BlueprintIdentifier = "43175E5C1DC339A90078915F"
                BuildableName = "HYMBAUITests.xctest"
                BlueprintName = "HYMBAUITests"
                ReferencedContainer = "container:HYMBA.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0314B7E71DBA02460046136E"
+            BlueprintIdentifier = "43175E381DC339A80078915F"
             BuildableName = "HYMBA.app"
             BlueprintName = "HYMBA"
             ReferencedContainer = "container:HYMBA.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0314B7E71DBA02460046136E"
+            BlueprintIdentifier = "43175E381DC339A80078915F"
             BuildableName = "HYMBA.app"
             BlueprintName = "HYMBA"
             ReferencedContainer = "container:HYMBA.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0314B7E71DBA02460046136E"
+            BlueprintIdentifier = "43175E381DC339A80078915F"
             BuildableName = "HYMBA.app"
             BlueprintName = "HYMBA"
             ReferencedContainer = "container:HYMBA.xcodeproj">

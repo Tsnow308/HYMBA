@@ -2,8 +2,8 @@
 //  AppDelegate.m
 //  HYMBA
 //
-//  Created by Tsnow on 2016/10/21.
-//  Copyright © 2016年 Tsnow. All rights reserved.
+//  Created by 尹雪松 on 2016/10/28.
+//  Copyright © 2016年 尹雪松. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -21,7 +21,6 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
     self.window.rootViewController = [[SGTabBarViewController alloc] init];
-    
     return YES;
 }
 
