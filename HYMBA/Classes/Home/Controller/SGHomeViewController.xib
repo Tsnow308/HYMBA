@@ -1,20 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SGHomeViewController">
             <connections>
-                <outlet property="ADHeadView" destination="FwS-Qt-NEI" id="JWX-1r-JjI"/>
+                <outlet property="ADHeadView" destination="YuY-A8-A1X" id="cNS-0b-Cjz"/>
                 <outlet property="Head1" destination="Yr7-pq-PNP" id="PW8-mD-J1a"/>
                 <outlet property="Head2" destination="VeA-ZN-oKJ" id="wdm-ey-5TL"/>
                 <outlet property="Head3" destination="vzC-K4-0yc" id="6sw-We-smq"/>
                 <outlet property="Head4" destination="dWD-9g-5uh" id="0rH-oM-hpQ"/>
+                <outlet property="HeadView" destination="FwS-Qt-NEI" id="CY4-rg-xIE"/>
                 <outlet property="HomeTableView" destination="ulb-S7-I3g" id="spT-ff-iLZ"/>
                 <outlet property="navIcon" destination="zMp-rB-ucf" id="fTg-XP-aLk"/>
+                <outlet property="sliderBarView" destination="Fsw-Dk-9La" id="BhR-Ay-Vfe"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -24,8 +30,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0nh-u4-hdh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" HYMBA商学院" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FKS-h8-ZqI">
+                            <rect key="frame" x="117" y="17" width="143" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="Dze-tZ-LOs"/>
                             </constraints>
@@ -34,6 +42,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zMp-rB-ucf">
+                            <rect key="frame" x="10" y="17" width="30" height="30"/>
                             <color key="backgroundColor" red="1" green="0.39648413659999998" blue="0.28428295250000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="30" id="9X8-m6-khu"/>
@@ -41,6 +50,7 @@
                             </constraints>
                         </imageView>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3I2-EV-yAi">
+                            <rect key="frame" x="335" y="17" width="30" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="5WS-Jm-Xz7"/>
                                 <constraint firstAttribute="width" constant="30" id="SZu-Y9-Ze8"/>
@@ -60,6 +70,7 @@
                     </constraints>
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ulb-S7-I3g">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
@@ -78,21 +89,48 @@
         <view contentMode="scaleToFill" id="FwS-Qt-NEI">
             <rect key="frame" x="0.0" y="0.0" width="413" height="236"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YuY-A8-A1X" customClass="SGAdHeaderView">
+                    <rect key="frame" x="0.0" y="0.0" width="413" height="178"/>
+                    <color key="backgroundColor" red="0.23806324600000001" green="0.71930903199999996" blue="0.36559543010000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fsw-Dk-9La" customClass="HDSliderTabBar">
+                    <rect key="frame" x="0.0" y="180" width="413" height="56"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YuY-A8-A1X" firstAttribute="leading" secondItem="FwS-Qt-NEI" secondAttribute="leading" id="51R-ZX-8LG"/>
+                <constraint firstItem="YuY-A8-A1X" firstAttribute="height" secondItem="FwS-Qt-NEI" secondAttribute="height" multiplier="0.75" constant="1" id="5le-xi-O8Q"/>
+                <constraint firstAttribute="trailing" secondItem="YuY-A8-A1X" secondAttribute="trailing" id="7Ji-XW-rdM"/>
+                <constraint firstAttribute="trailing" secondItem="Fsw-Dk-9La" secondAttribute="trailing" id="9eX-RF-KGU"/>
+                <constraint firstItem="YuY-A8-A1X" firstAttribute="top" secondItem="FwS-Qt-NEI" secondAttribute="top" id="JhF-0I-Dr4"/>
+                <constraint firstItem="Fsw-Dk-9La" firstAttribute="leading" secondItem="FwS-Qt-NEI" secondAttribute="leading" id="Zdd-z8-BUo"/>
+                <constraint firstAttribute="bottom" secondItem="Fsw-Dk-9La" secondAttribute="bottom" id="ag3-q2-N2M"/>
+                <constraint firstItem="Fsw-Dk-9La" firstAttribute="top" secondItem="YuY-A8-A1X" secondAttribute="bottom" constant="2" id="i4E-QQ-RZn"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="376" y="-86"/>
+            <point key="canvasLocation" x="375.5" y="-86"/>
         </view>
         <view contentMode="scaleToFill" id="Yr7-pq-PNP">
             <rect key="frame" x="0.0" y="0.0" width="413" height="35"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMY-uO-NsK">
-                    <frame key="frameInset" minX="330" minY="5" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wMY-uO-NsK">
+                    <rect key="frame" x="343" y="3" width="40" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Dwo-gj-Lza"/>
+                        <constraint firstAttribute="width" constant="40" id="aD6-pw-ZPg"/>
+                    </constraints>
                     <state key="normal" title="更多"/>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="wMY-uO-NsK" firstAttribute="centerY" secondItem="Yr7-pq-PNP" secondAttribute="centerY" id="9v5-Iq-oXd"/>
+                <constraint firstAttribute="trailing" secondItem="wMY-uO-NsK" secondAttribute="trailing" constant="30" id="ebo-7t-2V1"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="376" y="117"/>
         </view>
@@ -100,13 +138,20 @@
             <rect key="frame" x="0.0" y="0.0" width="416" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sW-xc-n82">
-                    <frame key="frameInset" minX="333" minY="7" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6sW-xc-n82">
+                    <rect key="frame" x="346" y="7" width="40" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="IOj-iy-ik2"/>
+                        <constraint firstAttribute="width" constant="40" id="UM9-W3-hqX"/>
+                    </constraints>
                     <state key="normal" title="更多"/>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6sW-xc-n82" firstAttribute="centerY" secondItem="VeA-ZN-oKJ" secondAttribute="centerY" id="LQR-eT-V3o"/>
+                <constraint firstAttribute="trailing" secondItem="6sW-xc-n82" secondAttribute="trailing" constant="30" id="oMa-Bw-ksB"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="375" y="208"/>
         </view>
@@ -114,13 +159,20 @@
             <rect key="frame" x="0.0" y="0.0" width="413" height="37"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZZ-iy-6xi">
-                    <frame key="frameInset" minX="323" minY="3" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZZ-iy-6xi">
+                    <rect key="frame" x="343" y="4" width="40" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="NH0-QB-x7B"/>
+                        <constraint firstAttribute="height" constant="30" id="pnc-Ly-3gt"/>
+                    </constraints>
                     <state key="normal" title="更多"/>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="VZZ-iy-6xi" secondAttribute="trailing" constant="30" id="pZz-8L-fEZ"/>
+                <constraint firstItem="VZZ-iy-6xi" firstAttribute="centerY" secondItem="vzC-K4-0yc" secondAttribute="centerY" id="z7H-vV-p5O"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="375.5" y="299.5"/>
         </view>
@@ -128,13 +180,20 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="35"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncD-Jx-jgz">
-                    <frame key="frameInset" minX="326" minY="5" width="46" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncD-Jx-jgz">
+                    <rect key="frame" x="344" y="3" width="40" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="DBl-J8-z9k"/>
+                        <constraint firstAttribute="height" constant="30" id="VyO-dP-CLC"/>
+                    </constraints>
                     <state key="normal" title="更多"/>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ncD-Jx-jgz" firstAttribute="centerY" secondItem="dWD-9g-5uh" secondAttribute="centerY" id="Xir-fV-1bm"/>
+                <constraint firstAttribute="trailing" secondItem="ncD-Jx-jgz" secondAttribute="trailing" constant="30" id="rlP-iU-jgW"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="376" y="382.5"/>
         </view>

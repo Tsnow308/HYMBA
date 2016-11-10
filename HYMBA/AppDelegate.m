@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "SGTabBarViewController.h"
+#import "SGNewfeatureVC.h"
+#import <UMSocialCore/UMSocialCore.h>
 
 @interface AppDelegate ()
 
@@ -17,12 +19,45 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    //打开日志
+    [[UMSocialManager defaultManager] openLog:YES];
+    //设置友盟appkey
+    [[UMSocialManager defaultManager] setUmSocialAppkey:@"581834c7310c93358b002239"];
+    
+    //设置微信的appId和appKey
+    [[UMSocialManager defaultManager] setPlaform:UMSocialPlatformType_WechatSession appKey:@"wxb9457e99bb57ba4d" appSecret:@"788b347d930696001ed20d459497ecfb" redirectURL:@"http://www.hymba.com"];
+    
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     [self.window makeKeyAndVisible];
-    self.window.rootViewController = [[SGTabBarViewController alloc] init];
+    
+    // 记录页面弹框在第一次启动时才有
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    if (![userDefaults objectForKey:@"userTips"]) {
+        self.window.rootViewController = [[SGNewfeatureVC alloc] init];
+        
+        [userDefaults setObject:@1 forKey:@"userTips"];
+        [userDefaults synchronize];
+    }else{
+        
+        self.window.rootViewController = [[SGTabBarViewController alloc]init];
+    }
+                                    
+    
     return YES;
 }
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options
+{
+   
+    BOOL result = [[UMSocialManager defaultManager] handleOpenURL:url];
+    if (!result) {
+        // 其他如支付等SDK的回调
+    }
+    return result;
+}
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {

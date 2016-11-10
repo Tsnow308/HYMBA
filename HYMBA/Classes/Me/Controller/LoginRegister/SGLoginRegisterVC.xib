@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SGLoginRegisterVC">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x46-Sc-g6U">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HYMBA-LOGO" translatesAutoresizingMaskIntoConstraints="NO" id="5wZ-69-wUd">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="170" id="YSY-fc-fYO"/>
+                                <constraint firstAttribute="width" constant="170" id="l6T-Ab-xaj"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="5wZ-69-wUd" firstAttribute="centerX" secondItem="x46-Sc-g6U" secondAttribute="centerX" id="S94-eY-bUN"/>
+                        <constraint firstAttribute="bottom" secondItem="5wZ-69-wUd" secondAttribute="bottom" constant="40" id="fzi-fi-bAL"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fNv-Qx-fbp">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Gnv-i3-jhz"/>
+                        <constraint firstAttribute="width" constant="130" id="jtM-Xr-TQ8"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="使用微信登录" image="weixin">
+                        <color key="titleColor" red="0.53889435529708862" green="0.60199767351150513" blue="0.71420544385910034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="weixinLogin:" destination="-1" eventType="touchUpInside" id="D06-sM-JFO"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JHz-X9-610">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oht-Ir-Iak">
+                            <color key="backgroundColor" red="0.42053699493408203" green="0.4993630051612854" blue="0.64057320356369019" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="登录">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="loginAction:" destination="-1" eventType="touchUpInside" id="dHy-MC-1Af"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAq-0h-QmE">
+                            <color key="backgroundColor" red="0.99877065420150757" green="0.71397900581359863" blue="0.027912972494959831" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="注册">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="registerAction:" destination="-1" eventType="touchUpInside" id="7KR-iq-xSy"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="aAq-0h-QmE" firstAttribute="top" secondItem="JHz-X9-610" secondAttribute="top" id="5pN-C7-e7O"/>
+                        <constraint firstAttribute="height" constant="50" id="Jqy-mH-Lt3"/>
+                        <constraint firstAttribute="bottom" secondItem="aAq-0h-QmE" secondAttribute="bottom" id="Nvn-6K-ow9"/>
+                        <constraint firstAttribute="bottom" secondItem="Oht-Ir-Iak" secondAttribute="bottom" id="ShL-j4-OEn"/>
+                        <constraint firstItem="aAq-0h-QmE" firstAttribute="leading" secondItem="Oht-Ir-Iak" secondAttribute="trailing" constant="20" id="Yv7-QS-LfL"/>
+                        <constraint firstItem="Oht-Ir-Iak" firstAttribute="top" secondItem="JHz-X9-610" secondAttribute="top" id="aVj-pS-27g"/>
+                        <constraint firstItem="Oht-Ir-Iak" firstAttribute="leading" secondItem="JHz-X9-610" secondAttribute="leading" id="ciH-am-4Kv"/>
+                        <constraint firstItem="aAq-0h-QmE" firstAttribute="leading" secondItem="Oht-Ir-Iak" secondAttribute="trailing" constant="20" id="qdL-vd-Cg1"/>
+                        <constraint firstAttribute="trailing" secondItem="aAq-0h-QmE" secondAttribute="trailing" id="rIQ-jt-zRl"/>
+                        <constraint firstItem="aAq-0h-QmE" firstAttribute="width" secondItem="Oht-Ir-Iak" secondAttribute="width" id="uZ8-GX-mxo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fNv-Qx-fbp" secondAttribute="bottom" constant="80" id="Bez-Du-e4A"/>
+                <constraint firstAttribute="trailing" secondItem="JHz-X9-610" secondAttribute="trailing" constant="50" id="Mbp-W3-nyO"/>
+                <constraint firstItem="JHz-X9-610" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="PBz-SA-N1B"/>
+                <constraint firstItem="x46-Sc-g6U" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.5" id="Qdd-Dc-APP"/>
+                <constraint firstItem="x46-Sc-g6U" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="RtJ-DN-sUP"/>
+                <constraint firstItem="x46-Sc-g6U" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="WlG-X6-J1N"/>
+                <constraint firstItem="fNv-Qx-fbp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ie6-8D-5HQ"/>
+                <constraint firstItem="JHz-X9-610" firstAttribute="top" secondItem="x46-Sc-g6U" secondAttribute="bottom" constant="50" id="lWN-W6-80t"/>
+                <constraint firstAttribute="trailing" secondItem="x46-Sc-g6U" secondAttribute="trailing" id="rNP-M1-f8H"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="HYMBA-LOGO" width="142" height="143"/>
+        <image name="weixin" width="15" height="15"/>
+    </resources>
+</document>

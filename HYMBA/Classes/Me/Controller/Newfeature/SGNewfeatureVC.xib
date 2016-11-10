@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SGNewfeatureVC">
+            <connections>
+                <outlet property="pageControl" destination="HxD-B7-hL5" id="dca-7R-chO"/>
+                <outlet property="scrollView" destination="aVW-i9-IgD" id="Tba-9l-yfg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aVW-i9-IgD">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </scrollView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="HxD-B7-hL5">
+                    <rect key="frame" x="140" y="458" width="40" height="10"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="3mL-RQ-cIE"/>
+                        <constraint firstAttribute="height" constant="10" id="EBi-qf-jtC"/>
+                    </constraints>
+                    <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="aVW-i9-IgD" secondAttribute="trailing" id="1G4-G7-tLC"/>
+                <constraint firstAttribute="bottom" secondItem="HxD-B7-hL5" secondAttribute="bottom" constant="100" id="CDM-dH-FXl"/>
+                <constraint firstItem="aVW-i9-IgD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Dgk-tU-o4r"/>
+                <constraint firstAttribute="bottom" secondItem="aVW-i9-IgD" secondAttribute="bottom" id="IlY-7A-d8R"/>
+                <constraint firstItem="HxD-B7-hL5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mcF-Z6-khb"/>
+                <constraint firstItem="aVW-i9-IgD" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="v4k-jq-UcA"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

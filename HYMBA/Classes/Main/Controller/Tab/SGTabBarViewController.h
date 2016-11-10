@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(int,SGTabBarStatus) {
+    SGTabBarStatus_HOME = 0,
+    SGTabBarStatus_STUDY,
+    SGTabBarStatus_FOUND,
+    SGTabBarStatus_ME,
+};
+
 @interface SGTabBarViewController : UITabBarController
 
 @end

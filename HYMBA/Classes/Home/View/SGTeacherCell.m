@@ -1,10 +1,10 @@
 //
-//  SGTeacherCell.m
+//  SGRecommendCell.m
 //  HYMBA
 //
 //  Created by 尹雪松 on 2016/10/24.
 //  Copyright © 2016年 Tsnow. All rights reserved.
-//  权威导师cell
+//  热门推荐cell
 
 #import "SGTeacherCell.h"
 

@@ -37,6 +37,12 @@
 #import "UIImage+Extension.h"
 #import "Masonry.h"
 #import "SGMacro.h"
+#import "UIImage+MJ.h"
+#import "UIView+Uitls.h"
+#import "HYMBAUrl.h"
+#import "UIImage+fixOrientation.h"
+#import <UIImageView+WebCache.h>
+
 
 #endif
 
